@@ -41,7 +41,7 @@ public class Member {
         //passwordEncoder.encode->암호화
         String password=passwordEncoder.encode(memberFormDto.getPassword());
         member.setPassword(password);
-        member.setRole(Role.USER);  // 처음에 USER로
+        member.setRole(Role.ADMIN);  // 처음에 USER로
         return member;
     }
 
