@@ -28,7 +28,7 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus; // 주문상태
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY) // mappedBy 주인X -> 읽기 밖에 안됩니다., 영속성, 고아객체
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY) // mappedBy 주인X -> 읽기 밖에 안됨, 영속성, 고아객체
     private List<OrderItem> orderItems = new ArrayList<>();
 
     private LocalDateTime regTime;
