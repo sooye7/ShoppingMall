@@ -16,7 +16,7 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class Item {
+public class Item extends BaseEntity{
     @Id //기본키
     @Column(name="item_id")
     @GeneratedValue(strategy = GenerationType.AUTO) // 자동을 1씩 증가
