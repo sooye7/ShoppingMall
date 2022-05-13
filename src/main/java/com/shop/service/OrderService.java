@@ -78,4 +78,8 @@ public class OrderService {
         return  true;
     }
 
+    public void cancelOrder(Long orderId){
+        Order order=orderRepository.findById(orderId).orElseThrow(EntityNotFoundException::new);
+        order.cancelOrder();
+    }
 }
