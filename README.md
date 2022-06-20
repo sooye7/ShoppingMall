@@ -1,4 +1,4 @@
-# ShoppingMall2
+# ShoppingMall
 ## ShoppingMall Project for Spring Boot
 
 * 메인
